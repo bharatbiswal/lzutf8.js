@@ -23,7 +23,8 @@ namespace LZUTF8 {
 		if (typeof window !== "object" || typeof window.location !== "object")
 			return false;
 
-		return document.location.protocol !== 'http:' && document.location.protocol !== 'https:';
+		//return document.location.protocol !== 'http:' && document.location.protocol !== 'https:';
+		return false;
 	}
 
 	export const webWorkersAvailable = function (): boolean {
